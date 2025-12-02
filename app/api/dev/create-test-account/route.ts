@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabaseAdmin } from '@/lib/supabase';
-import { createAgent, listAgents } from '@/lib/services/agents';
+import { createAgent, listAgents } from '@/lib/services/conversations';
 
 const TEST_EMAIL = 'teste+demo@local.dev';
 const TEST_PASSWORD = 'SenhaForte123!';
