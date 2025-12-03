@@ -74,9 +74,9 @@ export async function requireSubscription(): Promise<{
     }
 
     return {
-      hasSubscription: userProfile.is_subscribed,
+      hasSubscription: userProfile?.is_subscribed ?? false,
       userProfile,
-      needsUpgrade: !userProfile.is_subscribed
+      needsUpgrade: !(userProfile?.is_subscribed ?? false),
     };
     
   } catch (error) {
