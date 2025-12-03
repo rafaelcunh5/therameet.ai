@@ -12,7 +12,7 @@ export interface LLMProvider {
 export class GroqProvider implements LLMProvider {
   async chat(
     messages: LLMMessage[],
-    model: string = process.env.GROQ_MODEL || 'llama-3.1-70b-versatile'
+    model: string = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile'
   ): Promise<string> {
     const response = await groq.chat.completions.create({
       model,

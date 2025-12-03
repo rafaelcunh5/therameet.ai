@@ -36,7 +36,7 @@ Responda de forma natural, educada e útil.
 `;
 
     const completion = await client.chat.completions.create({
-      model: "llama-3.1-70b-versatile",
+      model: "llama-3.3-70b-versatile",
       messages: [
         { role: "system", content: "Você é um atendente profissional via WhatsApp." },
         { role: "user", content: prompt },
