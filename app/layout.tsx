@@ -1,5 +1,10 @@
 import type { ReactNode } from "react";
+<<<<<<< HEAD
 import "./globals.css";
+=======
+import { DashboardSidebar } from "@/components/dashboard/Sidebar";
+import "../globals.css";
+>>>>>>> 9396767e2ae83e5e9d30d620c60a8d6cb39a1d04
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { SupabaseProvider } from "@/components/auth/SupabaseProvider";
