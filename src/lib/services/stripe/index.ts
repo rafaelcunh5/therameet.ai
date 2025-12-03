@@ -2,7 +2,7 @@ import Stripe from 'stripe';
 import { supabaseAdmin } from '@/lib/supabase';
 
 const stripe = new Stripe(process.env.STRIPE_KEY || '', {
-  apiVersion: '2024-06-20',
+  apiVersion: '2025-11-17.clover',
 });
 
 export function getStripe() {
