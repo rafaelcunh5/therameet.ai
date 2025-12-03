@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 
 export const stripe = new Stripe(process.env.STRIPE_KEY as string, {
-  apiVersion: "2022-11-15",
+  apiVersion: "2025-11-17.clover",
 });
 
 export async function hasActiveSubscription(userId: string): Promise<boolean> {
