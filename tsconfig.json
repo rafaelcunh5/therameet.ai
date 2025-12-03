@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "allowJs": false,
@@ -17,39 +13,31 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+
+    // 🔥 Aqui está a correção principal
     "baseUrl": ".",
     "paths": {
-      "@/lib/*": [
-        "src/lib/*"
-      ],
-      "@/components/*": [
-        "src/components/*"
-      ],
-      "@/app/*": [
-        "src/app/*"
-      ],
-      "@/services/*": [
-        "src/services/*"
-      ]
+      "@/*": ["src/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/components/*": ["src/components/*"],
+      "@/services/*": ["src/services/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "app/*": ["app/*"]
     },
-    "types": [
-      "jest",
-      "node"
-    ],
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+
+    "types": ["jest", "node"],
+    "plugins": [{ "name": "next" }]
   },
+
+  // Ajuste dos includes para refletir seu projeto real
   "include": [
     "next-env.d.ts",
+    "app/**/*",
     "src/**/*",
+    "pages/**/*",
     "tests/**/*",
-    "*.d.ts",
     ".next/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+
+  "exclude": ["node_modules"]
 }
