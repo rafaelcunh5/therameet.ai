@@ -14,8 +14,6 @@
     "jsx": "preserve",
     "incremental": true,
 
-    // 🔥 Aqui está a correção principal
-<<<<<<< HEAD
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
@@ -24,31 +22,17 @@
       "@/services/*": ["src/services/*"],
       "@/hooks/*": ["src/hooks/*"],
       "app/*": ["app/*"]
-=======
-    "baseUrl": "scripts/src",
-    "paths": {
-      "@/*": ["*"],
-      "@/lib/*": ["lib/*"],
-      "@/components/*": ["components/*"],
-      "@/services/*": ["services/*"],
-      "@/hooks/*": ["hooks/*"]
->>>>>>> 9396767e2ae83e5e9d30d620c60a8d6cb39a1d04
     },
 
     "types": ["jest", "node"],
     "plugins": [{ "name": "next" }]
   },
 
-  // Ajuste dos includes para refletir seu projeto real
   "include": [
     "next-env.d.ts",
     "app/**/*",
-<<<<<<< HEAD
     "src/**/*",
     "pages/**/*",
-=======
-    "scripts/src/**/*",
->>>>>>> 9396767e2ae83e5e9d30d620c60a8d6cb39a1d04
     "tests/**/*",
     ".next/types/**/*.ts"
   ],
